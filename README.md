@@ -30,7 +30,12 @@ A designer changes the price of the third upgrade and runs the old and new econo
 
 ## System map
 
-```mermaid
+![Proposed system architecture](assets/architecture.svg)
+
+<details>
+<summary>Editable Mermaid source</summary>
+
+```text
 flowchart TD
   A[Economy configuration] --> C[Simulation scheduler]
   B[Agent policies and seeds] --> C
@@ -41,6 +46,8 @@ flowchart TD
   F --> G[Configuration comparison]
   G --> H[Game adapter or experiment export]
 ```
+
+</details>
 
 The arrows describe proposed data or control relationships. Detailed ownership and error paths live in the architecture and pipeline specifications.
 

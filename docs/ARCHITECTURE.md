@@ -2,7 +2,12 @@
 
 ## Component boundaries
 
-```mermaid
+![Proposed system architecture](../assets/architecture.svg)
+
+<details>
+<summary>Editable Mermaid source</summary>
+
+```text
 flowchart TD
   A[Economy configuration] --> C[Simulation scheduler]
   B[Agent policies and seeds] --> C
@@ -13,6 +18,8 @@ flowchart TD
   F --> G[Configuration comparison]
   G --> H[Game adapter or experiment export]
 ```
+
+</details>
 
 | Component | Owns | Boundary |
 | --- | --- | --- |
